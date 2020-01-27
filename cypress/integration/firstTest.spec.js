@@ -8,7 +8,7 @@ describe('Test with backend', () => {
         cy.loginToApplication()
     })
 
-    it.skip('verify correct request and response', () => {
+    it('verify correct request and response', () => {
         
         cy.server()
         cy.route('POST', '**/articles').as('postArticles')
@@ -59,14 +59,7 @@ describe('Test with backend', () => {
 
     })
 
-    it.only('delete a new article in a global feed', () => {
-
-        const userCredentials = {
-            "user": {
-                "email": "artem.bondar16@gmail.com",
-                "password": "CypressTest1"
-            }
-        }
+    it('delete a new article in a global feed', () => {
 
         const bodyRequest = {
             "article": {
@@ -77,9 +70,7 @@ describe('Test with backend', () => {
             }
         }
 
-        cy.request('POST', 'https://conduit.productionready.io/api/users/login', userCredentials)
-        .its('body').then(body => {
-            const token = body.user.token
+        cy.get('@token').then(token => {
 
             cy.request({
                 url: 'https://conduit.productionready.io/api/articles/',
