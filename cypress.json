@@ -5,6 +5,9 @@
     "viewportWidth": 1920,
     "video": false,
     "env": {
-        "RETRIES": 2
+        "RETRIES": 2,
+        "username": "artem.bondar16@gmail.com",
+        "password": "CypressTest1",
+        "apiUrl": "https://conduit.productionready.io/"
     }
 }

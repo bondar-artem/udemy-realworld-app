@@ -73,7 +73,7 @@ describe('Test with backend', () => {
         cy.get('@token').then(token => {
 
             cy.request({
-                url: 'https://conduit.productionready.io/api/articles/',
+                url: Cypress.env('apiUrl')+'api/articles/',
                 headers: { 'Authorization': 'Token '+token},
                 method: 'POST',
                 body: bodyRequest
@@ -86,7 +86,7 @@ describe('Test with backend', () => {
             cy.get('.article-actions').contains('Delete Article').click()
 
             cy.request({
-                url: 'https://conduit.productionready.io/api/articles?limit=10&offset=0',
+                url: Cypress.env('apiUrl')+'api/articles?limit=10&offset=0',
                 headers: { 'Authorization': 'Token '+token},
                 method: 'GET'
             }).its('body').then( body => {
