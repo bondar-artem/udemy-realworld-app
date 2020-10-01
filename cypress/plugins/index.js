@@ -24,8 +24,6 @@ function getConfigurationByFile (file) {
 }
 
 module.exports = (on, config) => {
-  require('cypress-plugin-retries/lib/plugin')(on)
-
   const file = config.env.configFile
 
   return getConfigurationByFile(file)
