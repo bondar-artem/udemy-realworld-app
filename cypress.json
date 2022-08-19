@@ -1,5 +1,5 @@
 {
-    "baseUrl": "http://localhost:4200/",
+    "baseUrl": "https://angular.realworld.io/",
     "ignoreTestFiles": "**/examples/*",
     "viewportHeight": 1080,
     "viewportWidth": 1920,
@@ -11,10 +11,10 @@
     "env": {
         "username": "cytest@test.com",
         "password": "Welcome123",
-        "apiUrl": "https://conduit.productionready.io/"
+        "apiUrl": "https://api.realworld.io/"
     },
     "retries": {
         "runMode": 2,
-        "openMode": 1
+        "openMode": 0
     }
 }
