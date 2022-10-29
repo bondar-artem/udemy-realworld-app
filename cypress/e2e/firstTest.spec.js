@@ -53,12 +53,12 @@ describe('Tests with backend', () => {
 
     })
 
-    it('delete a new article in a global feed', () => {
+    it.only('delete a new article in a global feed', () => {
 
         const bodyRequest = {
             "article": {
                 "tagList": [],
-                "title": "Request from API",
+                "title": "Request from the API",
                 "description": "API testing is easy",
                 "body": "Angular is cool"
             }
@@ -84,7 +84,7 @@ describe('Tests with backend', () => {
                 headers: { 'Authorization': 'Token '+token},
                 method: 'GET'
             }).its('body').then( body => {
-                expect(body.articles[0].title).not.to.equal('Request from API')
+                expect(body.articles[0].title).not.to.equal('Request from the API')
             })
 
         })

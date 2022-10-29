@@ -33,7 +33,7 @@ Cypress.Commands.add('loginToApplication', () => {
         }
     }
 
-    cy.request('POST', Cypress.env('apiUrl')+'/users/login', userCredentials)
+    cy.request('POST', Cypress.env('apiUrl')+'api/users/login', userCredentials)
         .its('body').then( body => {
             const token = body.user.token
             cy.wrap(token).as('token')

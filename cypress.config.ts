@@ -11,7 +11,7 @@ export default defineConfig({
   env: {
     username: 'cytest@test.com',
     password: 'Welcome123',
-    apiUrl: 'https://conduit.productionready.io/api',
+    apiUrl: 'https://api.realworld.io/',
   },
   retries: {
     runMode: 2,
