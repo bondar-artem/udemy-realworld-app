@@ -1,39 +1,39 @@
 {
     "articles": [
         {
-            "title": "This is a title of the Article",
-            "slug": "this-is-a-title-of-the-article-3putmt",
-            "body": "This is a body or the article",
-            "createdAt": "2020-01-20T20:09:37.807Z",
-            "updatedAt": "2020-01-20T20:09:37.807Z",
-            "tagList": [],
+            "slug": "This-is-a-title-0.856218959531236-1457",
+            "title": "Title 1",
             "description": "This is a descritption",
-            "author": {
-                "username": "CyTester",
-                "bio": null,
-                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
-                "following": false
-            },
+            "body": "This is a body of the Article",
+            "tagList": [],
+            "createdAt": "2022-07-31T00:34:33.687Z",
+            "updatedAt": "2022-07-31T00:34:33.687Z",
             "favorited": false,
-            "favoritesCount": 1
+            "favoritesCount": 1,
+            "author": {
+                "username": "CyTest",
+                "bio": null,
+                "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+                "following": false
+            }
         },
         {
-            "title": "New Article",
-            "slug": "new-article-qh9pg7",
-            "body": "214214",
-            "createdAt": "2020-01-20T19:55:50.452Z",
-            "updatedAt": "2020-01-20T19:55:50.452Z",
+            "slug": "This-is-a-title-0.6871396727368559-1457",
+            "title": "Title 2",
+            "description": "This is a descritption",
+            "body": "This is a body of the Article",
             "tagList": [],
-            "description": "12414124",
-            "author": {
-                "username": "julianjules",
-                "bio": null,
-                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
-                "following": false
-            },
+            "createdAt": "2022-07-31T00:34:29.568Z",
+            "updatedAt": "2022-07-31T00:34:29.568Z",
             "favorited": false,
-            "favoritesCount": 5
+            "favoritesCount": 5,
+            "author": {
+                "username": "CyTest",
+                "bio": null,
+                "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+                "following": false
+            }
         }
     ],
-    "articlesCount": 500
+    "articlesCount": 2
 }
