@@ -15,7 +15,10 @@
     "junit:merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/result.xml",
     "cypress:run": "npm run prereport && npx cypress run || exit 0",
     "cypress:run_qa": "npx cypress run --env configFile=qa",
-    "cypress:e2e": "start-test start http-get://localhost:4200 cypress:run && npm run junit:merge && npm run mochawesome:merge"
+    "cypress:e2e": "start-test start http-get://localhost:4200 cypress:run && npm run junit:merge && npm run mochawesome:merge",
+
+    "cy:open_dev": "npx cypress open --env username=cytest3@test.com,password=Welcome000",
+    "cy:open_process": "npx cypress open --env username=$DB_USERNAME,password=$PASSWORD"
   },
   "pre-commit": [
     "lint"
@@ -45,7 +48,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "^9.4.0",
     "codelyzer": "^4.5.0",
-    "cypress": "^10.6.0",
+    "cypress": "^10.11.0",
     "cypress-multi-reporters": "^1.2.3",
     "install": "^0.13.0",
     "jasmine-core": "~2.6.2",
