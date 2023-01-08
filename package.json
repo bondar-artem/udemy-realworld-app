@@ -60,7 +60,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "mocha": "^7.0.1",
+    "mocha": "^10.2.0",
     "mocha-junit-reporter": "^1.23.3",
     "mochawesome": "^4.1.0",
     "mochawesome-merge": "^4.0.0",
