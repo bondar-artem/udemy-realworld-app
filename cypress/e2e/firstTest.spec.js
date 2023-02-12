@@ -53,7 +53,7 @@ describe('Tests with backend', () => {
 
     })
 
-    it.only('delete a new article in a global feed', () => {
+    it('delete a new article in a global feed', () => {
 
         const bodyRequest = {
             "article": {
